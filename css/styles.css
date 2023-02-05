@@ -568,6 +568,7 @@ height: 300px;
 
 .section-portfolio-item:hover .portfolio_text{
 transform: translateY(0);
+
 }
 
 .section-portfolio-item-list {
@@ -575,7 +576,8 @@ transform: translateY(0);
   flex-wrap: wrap;
   gap: 48px 16px;
 }
-.section-portfolio-button:hover, .section-portfolio-button:focus {
+.section-portfolio-button:hover, 
+.section-portfolio-button:focus {
   background-color: #4d5ae5;
   color: #ffffff;
  
@@ -597,12 +599,14 @@ background-color: #4D5AE5;
 background-blend-mode: soft-light;
 mix-blend-mode: normal;
 padding: 40px;
-
 width: 360px;
 height: 100%;
 left: 0;
 top: 0;
 transform: translateY(100%);
+background-blend-mode: soft-light;
+mix-blend-mode: normal;
+overflow: auto;
 }
 
 
