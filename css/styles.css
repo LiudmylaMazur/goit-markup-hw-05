@@ -590,8 +590,7 @@ height: 100%;
 left: 0;
 top: 0;
 transform: translateY(100%);
-background-blend-mode: soft-light;
-mix-blend-mode: normal;
+
 overflow: auto;
 }
 
@@ -648,4 +647,10 @@ height: 24px;
 background-color: #E7E9FC;
 border-radius: 50%;
 border: none;
+}
+
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
