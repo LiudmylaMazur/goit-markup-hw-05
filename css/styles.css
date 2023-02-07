@@ -143,8 +143,10 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 300ms linear;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  padding-bottom: 28px;
 }
 
 .header-link.current::after{
@@ -154,7 +156,7 @@ margin-right: auto;
   height: 4px;
   background-color: #404bbf;
   left: 0;
-  bottom: -24px;
+  bottom: 0;
   border-radius: 2px;
 
 }
@@ -174,6 +176,8 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-mail:hover,
 .header-link-mail:focus,
@@ -187,6 +191,8 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -----------------first section web ------------- */
 .effective {
@@ -230,6 +236,8 @@ margin-right: auto;
   border-radius: 4px;
   padding: 16px 32px;
   text-align: center;  
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   }
 
  .button-btn:hover {background-color:#404BBF
@@ -277,6 +285,8 @@ margin-right: auto;
   justify-content: center;
   color: #000000;
   margin-bottom: 8px;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .two-link:hover{
   border: 1px solid #000000;
@@ -373,6 +383,8 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .three-link:hover{
@@ -415,6 +427,8 @@ border-radius: 0px 0px 4px 4px;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: #8E8F99;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -508,6 +522,8 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover{
@@ -590,7 +606,8 @@ height: 100%;
 left: 0;
 top: 0;
 transform: translateY(100%);
-
+transition: color 250ms 
+linear cubic-bezier(0.4, 0, 0.2, 1);
 overflow: auto;
 }
 
