@@ -143,7 +143,8 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   padding-bottom: 28px;
 }
@@ -175,7 +176,8 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-mail:hover,
 .header-link-mail:focus,
@@ -189,7 +191,8 @@ margin-right: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -----------------first section web ------------- */
 .effective {
@@ -233,7 +236,8 @@ margin-right: auto;
   border-radius: 4px;
   padding: 16px 32px;
   text-align: center;  
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   }
 
  .button-btn:hover {background-color:#404BBF
@@ -281,20 +285,13 @@ margin-right: auto;
   justify-content: center;
   color: #000000;
   margin-bottom: 8px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  
-
-
-
-
-
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .two-link:hover{
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
 }
 .two-icon{
   fill: #000000;
@@ -386,7 +383,8 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .three-link:hover{
@@ -428,8 +426,9 @@ border-radius: 0px 0px 4px 4px;
   height: 88px;
   border: 1px solid currentColor;
   border-radius: 4px;
- 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #8E8F99;
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -514,7 +513,6 @@ border-radius: 0px 0px 4px 4px;
 .footer-item {
   width: 40px;
   height: 40px;
-  
 }
 .footer-link {
   width: 100%;
@@ -524,7 +522,8 @@ border-radius: 0px 0px 4px 4px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms 
+  linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover{
@@ -607,7 +606,8 @@ height: 100%;
 left: 0;
 top: 0;
 transform: translateY(100%);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms 
+linear cubic-bezier(0.4, 0, 0.2, 1);
 overflow: auto;
 }
 
@@ -633,7 +633,6 @@ border-top: 0;
   display: flex;
   padding: 12px 24px;
   font-family: inherit;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .backdrop{
@@ -641,9 +640,7 @@ border-top: 0;
   top: 0;
  width: 100%;
  height: 100%;
- background-color: rgba(46, 47, 66, 0.4);
-transition: background-color opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
 
 
 }
@@ -660,6 +657,11 @@ transform: translate(-50%, -50%);
 padding: 24px;
 
 }
+
+.backdrop.is-hidden .modal{
+  transform: translate(-50%, -50%)scale(1);
+}
+
 .modal-close{
 width: 24px;
 height: 24px;
@@ -674,5 +676,46 @@ margin-left: auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-title{
+  font-size: 16px;
+  font-weight: 500;
+  color: #2E2F42;
+  text-align: center;
+  margin-bottom: 16px;
+  
+  }
+  
+  .modal-form{
+  
+  }
+  
+  .modal-input{
+    width: 100%;
+    height: 40px;
+    border-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: #404BBF;
+    font-size: 14px;
+  padding-left: 15px;
+  }
+  
+  .modal-input::placeholder{
+    color: #31d0aa;
+    font-size: 16px;
+  }
+  
+  .modal-input:not(:placeholder-shown):not(:focus):valid{
+    background-color: #58fa6d;
+  }
+  
+  .modal-input:not(:placeholder-shown):not(:focus):invalid{
+    background-color: #fd7676;
+  }
+  
+  
+  .input-text{
+    
+  }
