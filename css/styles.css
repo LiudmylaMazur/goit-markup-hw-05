@@ -57,7 +57,7 @@ ol {
 
 a {
   text-decoration: none;
-  //color: inherit;
+  color: inherit;
 }
 
 .container {
@@ -164,7 +164,7 @@ margin-right: auto;
 
 .current {
   color: var(--primary-brand);
-  margin 76px;
+  margin: 76px;
 }
 
 .header-item {
@@ -563,7 +563,7 @@ position: relative;
 
 
 
-.section-portfolio-item:: {
+.section-portfolio-item{
 width: 360px;
 height: 300px;
 }
